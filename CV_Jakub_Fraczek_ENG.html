@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jakub Frączek - CV</title>
 <style>
   * { box-sizing: border-box; }
@@ -77,12 +78,28 @@
     padding-top: 8px;
   }
   a { color: #2f5fd6; text-decoration: none; }
+
+  @media (max-width: 720px) {
+    body { padding: 20px; }
+    .container { flex-direction: column; gap: 0; }
+  }
+
+  @media print {
+    @page { size: A4; margin: 10mm; }
+    body { max-width: none; padding: 0; font-size: 12px; }
+    h1 { font-size: 32px; margin-bottom: 8px; }
+    h2 { margin-top: 16px; }
+    li { font-size: 12px; }
+    .container { gap: 24px; }
+    h3, .role, .dates { break-after: avoid; }
+    ul, li { break-inside: avoid; }
+  }
 </style>
 </head>
 <body>
 
 <h1>Jakub Frączek</h1>
-<p class="intro">I am a 3rd-year Computer Science student. I am passionate about software development, web development and cyber security.</p>
+<p class="intro">3rd-year Computer Science student and .NET developer with hands-on experience in full-stack development, Azure and cloud infrastructure. Interested in cybersecurity.</p>
 
 <div class="container">
 
@@ -95,55 +112,56 @@
     <p class="role">.NET Developer</p>
     <p class="dates">Mar. 2026 - Present</p>
     <ul>
-      <li>Started an internship in Middleware Solutions Team</li>
-      <li>Developing and maintaining backend/automation financing tools and solutions (.NET)</li>
-      <li>Working with people on international-level projects</li>
+      <li>Develop and maintain backend and automation solutions for financing tools in the Middleware Solutions Team (.NET)</li>
+      <li>Work with colleagues on international-level projects</li>
+      <li>Started as a 3-month intern and moved to a full-time role</li>
     </ul>
 
-    <h3>Students Scientific Association "CAPTCHA"</h3>
+    <h3>TESY Poland (part-time)</h3>
+    <p class="role">Full Stack Developer</p>
+    <p class="dates">Apr. 2025 - Present</p>
+    <ul>
+      <li>Responsible for the whole application lifecycle: design, development and deployment</li>
+      <li>Built an internal tool used by a team of 10 people to register and manage customer data</li>
+      <li>Advise on security and infrastructure decisions</li>
+    </ul>
+
+    <h3>Student Scientific Association "CAPTCHA"</h3>
     <p class="role">Full Stack Developer</p>
     <p class="dates">Jan. 2025 - Jan. 2026</p>
     <ul>
-      <li>Working with team at development and deployment (CI/CD)</li>
-      <li>Front-end web development (Spring, Django, REST API, DTO)</li>
-      <li>Back-end web development (React, TypeScript, UI)</li>
-    </ul>
-
-    <h3>TESY Poland</h3>
-    <p class="role">Product Merchandiser, Full Stack Developer</p>
-    <p class="dates">Apr. 2025 - June 2026</p>
-    <ul>
-      <li>Advising customers to choose best fitting TESY products in DIY Stores (Castorama, Obi)</li>
-      <li>Developing and deploying full stack web application to register customers and help manage data for other customers</li>
-      <li>Deploying application using Azure Container Apps and GitHub Actions</li>
+      <li>Developed and deployed team projects using CI/CD</li>
+      <li>Built back-end services and REST APIs (Spring, Django, DTO)</li>
+      <li>Built front-end interfaces (React, TypeScript)</li>
     </ul>
 
     <h2>Projects</h2>
 
-    <h3>E-commerce website - shirt shop</h3>
-    <p class="tech">Java (Spring Boot), TypeScript (React), PostgreSQL</p>
+    <h3>AURA - Distributed platform for automated network attacking</h3>
+    <p class="tech">.NET 10, Golang, Python | Engineering thesis, in progress, team project</p>
     <ul>
-      <li>Full-stack application used for retailers to display their products on website, manage orders for customers, gather data for newsletter</li>
+      <li>Platform that helps teams test the security of their web applications through automated attacks: endpoint discovery, etc.</li>
+      <li>Microservices architecture with RabbitMQ as a message broker</li>
     </ul>
 
-    <h3>Cryptography App</h3>
-    <p class="tech">C# (ASP.NET), TypeScript (Angular)</p>
+    <h3>Customer management app</h3>
+    <p class="tech">.NET 8, TypeScript (React), Azure</p>
     <ul>
-      <li>Full-stack application used to conceal data (text, media) inside images using steganography. Used for watermarking, data protection</li>
+      <li>Built from scratch for TESY Poland; around 200 customers registered in the system so far</li>
+      <li>Authentication and authorization with Entra ID, deployed on Azure Container Apps</li>
     </ul>
 
-    <h3>Distributed platform for automated network attacking</h3>
-    <p class="tech">C#, Golang, Python</p>
+    <h3>Steganography App</h3>
+    <p class="tech">.NET 10, TypeScript (Angular)</p>
     <ul>
-      <li>Automated attack surface reconnaissance, analysis and intelligence platform for teams to test their application safety</li>
-      <li>Microservices architecture, using RabbitMQ as a message broker</li>
+      <li>Full-stack application for concealing data (text, media) inside images using steganography. Used for watermarking, data protection</li>
     </ul>
 
     <h3>DevOps course platform</h3>
     <p class="tech">TypeScript (React)</p>
     <ul>
-      <li>Helping develop a web platform that offers DevOps courses</li>
-      <li>Using WebSockets and XtermJS library to access virtual machine terminal via SSH connection</li>
+      <li>Contributed to a web platform offering DevOps courses</li>
+      <li>Implemented browser access to a virtual machine terminal over SSH, using WebSockets and XtermJS</li>
     </ul>
 
   </div>
@@ -160,23 +178,14 @@
     </div>
 
     <h2>Skills</h2>
-    <p class="tech">Technical</p>
     <ul>
       <li>C# (.NET, ASP Core, Unity)</li>
       <li>TypeScript (React, Angular)</li>
-      <li>Golang (Gin, Bubbletea)</li>
+      <li>Golang (Gin, Cobra, Bubbletea)</li>
       <li>Python (FastAPI, Django)</li>
       <li>CI/CD (Git, Docker, Kubernetes)</li>
-      <li>Infrastructure (Linux, Windows Server)</li>
+      <li>Cloud and infrastructure (Azure, Linux, Proxmox)</li>
       <li>PostgreSQL, SQL Server, RabbitMQ</li>
-    </ul>
-
-    <p class="tech">Soft skills</p>
-    <ul>
-      <li>Working in teams</li>
-      <li>Consistency</li>
-      <li>Openness to new challenges</li>
-      <li>Fast-learning</li>
     </ul>
 
     <h2>Languages</h2>
@@ -189,14 +198,15 @@
     <h2>Certificates</h2>
     <ul>
       <li>British Council - English C1</li>
-      <li>AZ900 - Azure Fundamentals</li>
+      <li>AZ-900 - Azure Fundamentals</li>
+      <li>AI-200 - Azure AI Cloud Developer</li>
     </ul>
 
     <h2>Education</h2>
     <p class="dates">2023 - Present</p>
     <p class="role">Silesian University of Technology</p>
     <ul>
-      <li>Informatics, applied mathematics</li>
+      <li>B.Eng. in Computer Science, Applied Mathematics</li>
     </ul>
 
     <p class="dates">2019 - 2023</p>
@@ -207,17 +217,16 @@
 
     <h2>Interests</h2>
     <ul>
-      <li>Bike traveling across Europe</li>
+      <li>Traveling, cycling across Europe</li>
       <li>Self-hosting, networking</li>
-      <li>Photography, Graphics 2D/3D</li>
-      <li>Golf, squash, swimming, climbing, gaming</li>
-      <li>Traveling</li>
+      <li>Photography, 2D/3D graphics</li>
+      <li>Sports (golf, squash, swimming, climbing) and gaming</li>
     </ul>
 
   </div>
 </div>
 
-<p class="footer">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process.</p>
+<p class="footer">I hereby give consent for my personal data included in my application to be processed for the purposes of the current recruitment process, in accordance with Art. 6(1)(a) of the GDPR (Regulation (EU) 2016/679).</p>
 
 </body>
 </html>

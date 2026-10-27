@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jakub Frączek - CV</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    line-height: 1.4;
+    font-size: 14px;
+  }
+  h1 {
+    color: #2f5fd6;
+    font-size: 32px;
+    margin: 0 0 6px 0;
+  }
+  h2 {
+    color: #2f5fd6;
+    font-size: 16px;
+    border-bottom: 2px solid #2f5fd6;
+    padding-bottom: 3px;
+    margin: 20px 0 8px 0;
+  }
+  h3 {
+    font-size: 14px;
+    margin: 10px 0 1px 0;
+  }
+  p { margin: 0 0 4px 0; }
+  .contact { margin-bottom: 8px; }
+  .meta {
+    font-size: 12px;
+    color: #444;
+    margin: 0 0 3px 0;
+  }
+  .role {
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 0 1px 0;
+  }
+  .tech {
+    font-weight: bold;
+    margin: 2px 0 2px 0;
+  }
+  ul {
+    margin: 3px 0 3px 20px;
+    padding: 0;
+  }
+  li { margin-bottom: 2px; }
+  .footer {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding-top: 6px;
+  }
+  a { color: #2f5fd6; text-decoration: none; }
+
+  @media (max-width: 720px) {
+    body { padding: 20px; }
+  }
+
+  @media print {
+    @page { size: A4; margin: 12mm; }
+    body { max-width: none; padding: 0; font-size: 10.5px; line-height: 1.3; }
+    h1 { font-size: 26px; margin-bottom: 4px; }
+    h2 { font-size: 13px; margin: 12px 0 5px 0; break-after: avoid; }
+    h3 { font-size: 11.5px; margin-top: 7px; break-after: avoid; }
+    .meta { font-size: 10px; }
+    h3, .role, .meta, .tech { break-after: avoid; }
+    li { break-inside: avoid; margin-bottom: 1px; }
+    .footer { font-size: 8.5px; margin-top: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Jakub Frączek</h1>
+<p class="contact">Katowice, Poland | +48 533409480 | jakub.f102@gmail.com | <a href="https://github.com/MrKubis">github.com/MrKubis</a></p>
+
+<h2>Summary</h2>
+<p>3rd-year Computer Science student and .NET developer with hands-on experience in full-stack development, Azure and cloud infrastructure. Interested in cybersecurity.</p>
+
+<h2>Experience</h2>
+
+<h3>EY GDS (Ernst &amp; Young)</h3>
+<p class="role">.NET Developer</p>
+<p class="meta">Mar. 2026 - Present</p>
+<ul>
+  <li>Develop and maintain backend and automation solutions for financing tools in the Middleware Solutions Team (.NET)</li>
+  <li>Work with colleagues on international-level projects</li>
+  <li>Started as a 3-month intern and moved to a full-time role</li>
+</ul>
+
+<h3>TESY Poland (part-time)</h3>
+<p class="role">Full Stack Developer</p>
+<p class="meta">Apr. 2025 - Present</p>
+<ul>
+  <li>Responsible for the whole application lifecycle: design, development and deployment</li>
+  <li>Built an internal tool used by a team of 10 people to register and manage customer data</li>
+  <li>Advise on security and infrastructure decisions</li>
+</ul>
+
+<h3>Student Scientific Association "CAPTCHA"</h3>
+<p class="role">Full Stack Developer</p>
+<p class="meta">Jan. 2025 - Jan. 2026</p>
+<ul>
+  <li>Developed and deployed team projects using CI/CD</li>
+  <li>Built back-end services and REST APIs (Spring, Django, DTO)</li>
+  <li>Built front-end interfaces (React, TypeScript)</li>
+</ul>
+
+<h2>Projects</h2>
+
+<h3>AURA - Distributed platform for automated network attacking</h3>
+<p class="tech">.NET 10, Golang, Python | Engineering thesis, in progress, team project</p>
+<ul>
+  <li>Platform that helps teams test the security of their web applications through automated attacks: endpoint discovery, etc.</li>
+  <li>Microservices architecture with RabbitMQ as a message broker</li>
+</ul>
+
+<h3>Customer management app</h3>
+<p class="tech">.NET 8, TypeScript (React), Azure</p>
+<ul>
+  <li>Built from scratch for TESY Poland; around 200 customers registered in the system so far</li>
+  <li>Authentication and authorization with Entra ID, deployed on Azure Container Apps</li>
+</ul>
+
+<h3>Steganography App</h3>
+<p class="tech">.NET 10, TypeScript (Angular)</p>
+<ul>
+  <li>Full-stack application for concealing data (text, media) inside images using steganography. Used for watermarking, data protection</li>
+</ul>
+
+<h3>DevOps course platform</h3>
+<p class="tech">TypeScript (React)</p>
+<ul>
+  <li>Contributed to a web platform offering DevOps courses</li>
+  <li>Implemented browser access to a virtual machine terminal over SSH, using WebSockets and XtermJS</li>
+</ul>
+
+<h2>Skills</h2>
+<ul>
+  <li>C# (.NET, ASP Core, Unity)</li>
+  <li>TypeScript (React, Angular)</li>
+  <li>Golang (Gin, Cobra, Bubbletea)</li>
+  <li>Python (FastAPI, Django)</li>
+  <li>CI/CD (Git, Docker, Kubernetes)</li>
+  <li>Cloud and infrastructure (Azure, Linux, Proxmox)</li>
+  <li>PostgreSQL, SQL Server, RabbitMQ</li>
+</ul>
+
+<h2>Education</h2>
+<h3>Silesian University of Technology</h3>
+<p class="meta">2023 - Present</p>
+<ul>
+  <li>B.Eng. in Computer Science, Applied Mathematics</li>
+</ul>
+
+<h3>High School nr 1 in Mikołów</h3>
+<p class="meta">2019 - 2023</p>
+<ul>
+  <li>Mathematics, physics, informatics</li>
+</ul>
+
+<h2>Certificates</h2>
+<ul>
+  <li>British Council - English C1</li>
+  <li>AZ-900 - Azure Fundamentals</li>
+  <li>AI-200 - Azure AI Cloud Developer</li>
+</ul>
+
+<h2>Languages</h2>
+<ul>
+  <li>English (advanced)</li>
+  <li>Polish (native)</li>
+  <li>German (communicative)</li>
+</ul>
+
+<h2>Interests</h2>
+<ul>
+  <li>Traveling, cycling across Europe</li>
+  <li>Self-hosting, networking</li>
+  <li>Photography, 2D/3D graphics</li>
+  <li>Sports (golf, squash, swimming, climbing) and gaming</li>
+</ul>
+
+<p class="footer">I hereby give consent for my personal data included in my application to be processed for the purposes of the current recruitment process, in accordance with Art. 6(1)(a) of the GDPR (Regulation (EU) 2016/679).</p>
+
+</body>
+</html>
